@@ -5,33 +5,76 @@
 }
 
 body {
+  font-family: 'Raleway', sans-serif;
   background-color: yellow;
 }
 
 .container {
   margin: auto;
   width: 60%;
-  padding: 15px 0;
-  text-align: center;
 }
 
 /* header */
 
 header {
-  background-color: blue;
-  height: 250px;
+  width: 100%;
 }
+
+/* header-top */
 .header-top {
-  height: 210px;
-  background-color: purple;
+  position: relative;
+  height: 300px;
+  border: 10px solid rgb(255, 250, 250);
+  background-image: url(../img/natural-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.container-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-logo img {
+  height: 150px;
+}
+.container-logo h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: rgb(255, 250, 250);
+}
+
+/* header-bottom */
 .header-bottom {
   height: 40px;
+  line-height: 40px;
   background-color: grey;
+}
+.header-bottom nav ul {
+  list-style: none;
+  text-align: center;
+}
+.header-bottom nav ul li{
+  height: 40px;
+  display: inline-block;
+}
+.header-bottom nav ul li a{
+  display: inline-block;
+  padding: 0 5px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px;
+  text-decoration: none;
+  background-color: lightgrey;
 }
 
 /* main */
-
 .main-content {
   background-color: red;
   height: 1000px;
