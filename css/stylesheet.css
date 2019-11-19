@@ -6,12 +6,20 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: yellow;
+  background-image: url(../img/natural-pattern.png);
 }
 
 .container {
   margin: auto;
   width: 60%;
+}
+
+h2 {
+  font-size: 22px;
+  color: rgb(80, 71, 65);
+  text-shadow: 1px 1px 1px rgb(80, 71, 65);
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 /* header */
@@ -71,13 +79,16 @@ header {
   font-weight: bold;
   font-size: 10px;
   text-decoration: none;
+  vertical-align: bottom;
+}
+
+.header-bottom nav ul li:hover a{
   background-color: lightgrey;
+  cursor: pointer;
 }
 
 /* main */
 .main-content {
-  background-color: red;
-  height: 1000px;
   margin: 10px 0;
 }
 
@@ -89,38 +100,48 @@ header {
 
 .float-left {
   float: left;
+  border-radius: 6px;
 }
 
 .col-left {
   width: 18%;
-  height: 200px;
-  background-color: rgb(209, 123, 26);
+  background-color: rgb(254, 254, 254);
+}
+
+.col-left ul {
+  list-style: none;
 }
 
 .col-center {
   width: 56%;
-  height: 300px;
   margin: 0 4%;
-  padding: 10px;
-  background-color: rgb(91, 163, 51);
+  padding: 20px;
+  background-color: rgb(254, 254, 254);
 }
 
 .col-right {
   width: 18%;
-  height: 200px;
-  background-color: rgb(209, 123, 26);
 }
 
 .widget {
   width: 100%;
-  height: 300px;
   margin-bottom: 20px;
-  padding: 10px;
-  background-color: brown;
+  padding: 15px;
+  background-color: rgb(254, 254, 254);
+  border-radius: 6px;
+}
+
+.widget h3 {
+  font-size: 22px;
+  color: rgb(80, 71, 65);
+  text-shadow: 1px 1px 1px rgb(80, 71, 65);
+  margin-bottom: 20px;
 }
 /* footer */
 
 footer {
-  background-color: green;
+  background-color: rgb(254, 254, 254);
   height: 150px;
+  border-radius: 6px;
+  margin-bottom: 40px;
 }
