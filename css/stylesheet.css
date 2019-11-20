@@ -14,14 +14,6 @@ body {
   width: 60%;
 }
 
-h2 {
-  font-size: 22px;
-  color: rgb(80, 71, 65);
-  text-shadow: 1px 1px 1px rgb(80, 71, 65);
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
 /* header */
 
 header {
@@ -98,6 +90,7 @@ header {
   clear: both;
 }
 
+/* colonna sinistra */
 .float-left {
   float: left;
   border-radius: 6px;
@@ -106,12 +99,51 @@ header {
 .col-left {
   width: 18%;
   background-color: rgb(254, 254, 254);
+  padding: 5px;
+}
+.col-left-header {
+  margin-bottom: 10px;
+}
+.col-left-header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.col-left-header i,
+.col-left-header h3 {
+  float: left;
+}
+.col-left h3 {
+  width: 60%;
+  text-align: center;
+  color: rgb(80, 71, 65);
+}
+
+.col-left i {
+  color: rgb(255, 135, 42);
+  font-size: 25px;
+  margin-right: 7px;
 }
 
 .col-left ul {
   list-style: none;
 }
 
+.col-left ul li {
+  margin-bottom: 6px;
+}
+
+.col-left ul li a {
+  text-decoration: none;
+  color: rgb(63, 200, 20);
+  font-size: 14px;
+}
+
+.col-left ul li a:hover {
+  text-decoration: underline;
+}
+/* colonna centrale */
 .col-center {
   width: 56%;
   margin: 0 4%;
@@ -119,6 +151,15 @@ header {
   background-color: rgb(254, 254, 254);
 }
 
+.col-center-title {
+  font-size: 22px;
+  color: rgb(80, 71, 65);
+  text-shadow: 1px 1px 1px rgb(80, 71, 65);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* colonna destra */
 .col-right {
   width: 18%;
 }
